@@ -1,0 +1,29 @@
+name: BedWars1058CosmeticsPRO
+version: 1.0.0
+main: com.esycho.bwaddon.Main
+author: Esycho
+website: https://esychodev.me
+description: BedWars1058 Cosmetics Addon
+
+api-version: 1.13
+
+depend:
+  - BedWars1058
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  cosmetics:
+    description: Open the cosmetics menu
+    aliases: [cosmetic, bwc]
+    usage: /cosmetics
+
+permissions:
+  bwcosmetics.use:
+    description: Allows players to use cosmetics.
+    default: true
+
+  bwcosmetics.admin:
+    description: Allows admins to manage cosmetics.
+    default: op
